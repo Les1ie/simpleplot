@@ -81,6 +81,7 @@ def plot(nodes: list, edges: list, **kw) -> None:
         Graph(init_opts=InitOpts(
             width=width,
             height=height,
+            page_title="SimplePlot"
         ))
         .add("", nodes, edges, repulsion=repulsion, layout=layout, is_draggable=is_draggable)
         # .set_global_opts(title_opts=TitleOpts(title="Graph-基本示例"))
@@ -94,14 +95,14 @@ def plot(nodes: list, edges: list, **kw) -> None:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--nodes-input", help="the file contains vertices in graph, it shoud be a csv file.")
+        "--nodes", help="the file contains vertices in graph, it shoud be a csv file.")
     parser.add_argument(
-        "--edges-input", help="the file contains edges in graph, it shoud be a csv file.")
+        "--edges", help="the file contains edges in graph, it shoud be a csv file.")
     parser.add_argument(
         "--output", help="output file, it should be a html file.")
     args = vars(parser.parse_args())
-    node_file = args.get('nodes-input', "./nodes.csv")
-    edge_file = args.get('edges-input', "./edges.csv")
+    node_file = args.get('nodes', "./nodes.csv")
+    edge_file = args.get('edges', "./edges.csv")
 
     edges_list = csv_to_list(edge_file)
     edges = []

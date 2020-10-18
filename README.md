@@ -16,7 +16,7 @@ A simple plot library used to plot graph with arrtibuted vertices and edges.
 
 
 ```cmd
-python simpleplot --edges edges.txt --output simpleplot.html
+python simpleplot --edges edges.csv --output simpleplot.html
 ```
 
 ## Note
