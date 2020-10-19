@@ -32,7 +32,14 @@ class DataLoader():
         return self.data
 
 
-def csv_to_list(file_name: str):
-    dl = DataLoader(file_name=file_name)
+def load_file(file_name, attributes)->pd.DataFrame:
+  
+    loader = DataLoader(file_name)
+    df = loader.get()
+    fill(df, attributes)
+    return df
 
-    return dl.tolist()
+def fill(df: pd.DataFrame, attributes):
+    for a in attributes:
+        if a[0] not in df.columns:
+            df.insert(len(df.columns), a[0], a[1])

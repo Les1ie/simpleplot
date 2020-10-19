@@ -1,0 +1,6 @@
+*.html
+*.txt
+*.csv
+.vscode/*
+__pycache__/*
+
