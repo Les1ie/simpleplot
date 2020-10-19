@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ### Edge's Attribute
 - [x] color
-- [ ] direction (default is directed)
+- [x] direction (default is directed)
 - [x] linked vertices (source and target)
 
 ## Example
