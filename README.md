@@ -4,13 +4,21 @@ A simple plot library used to plot graph with arrtibuted vertices and edges.
 
 ## Usage
 
+### Installation
+
+```cmd
+git clone https://github.com/Les1ie/simpleplot.git simpleplot
+cd simpleplot
+pip install -r requirements.txt
+```
+
 ### Vectice' Attribute
-- color
+- [ ] color 
 
 ### Edge's Attribute
-- color
-- direction
-- linked vertices
+- [x] color
+- [ ] direction (default is directed)
+- [x] linked vertices (source and target)
 
 ## Example
 

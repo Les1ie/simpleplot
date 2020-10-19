@@ -28,6 +28,9 @@ class DataLoader():
     def tolist(self) -> list:
         return self.data.values.tolist()
 
+    def get(self) -> pd.DataFrame:
+        return self.data
+
 
 def csv_to_list(file_name: str):
     dl = DataLoader(file_name=file_name)
