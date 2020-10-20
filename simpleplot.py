@@ -12,39 +12,12 @@ import webbrowser
 from DataLoader.dataloader import load_file
 import helper
 import settings
-
-
-class BaseEdge(GraphLink):
-    def __init__(self, **kwargs) -> None:
-        directed = kwargs.pop("directed", True)
-        color = kwargs.pop("color", None)
-
-        if directed:
-            kwargs["symbol"] = ["none", "arrow"]
-        else:
-            kwargs["symbol"] = "none"
-
-        # emmm, if there is a self-loop...
-        # it dosen't work.
-        curve = 1 if kwargs['source'] == kwargs["target"] else 0
-
-        super().__init__(linestyle_opts=LineStyleOpts(color=color, curve=curve), **kwargs)
-
-
-class BaseNode(GraphNode):
-    def __init__(self, **kwargs) -> None:
-        kwargs['symbol_size'] = kwargs.pop("size", 20)
-        color = kwargs.pop("color", None)
-        super().__init__(**kwargs,
-
-                         #  label_opts=LabelOpts(color=color)
-                         )
-
+from items import BaseEdge, BaseNode
 
 def plot(nodes: list, edges: list, **kw) -> None:
     width = kw.get("width", '98vw')
     height = kw.get("height", '95vh')
-    repulsion = kw.get("repulsion", 1500)
+    repulsion = kw.get("repulsion", 2000)
     layout = kw.get("layout", "force")
     is_draggable = kw.get("is_draggable", True)
     output = kw.get("output", "SimplePlot.html")

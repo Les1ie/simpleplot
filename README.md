@@ -48,6 +48,8 @@ pipreqs ./
 Do not use `pip freeze` because it only saves the packages that are installed with pip install in your environment.
  
 Documents of the dependicies libraries:
-- [Echarts api](https://pyecharts.org/#/zh-cn/series_options?id=linestyleopts%ef%bc%9a%e7%ba%bf%e6%a0%b7%e5%bc%8f%e9%85%8d%e7%bd%ae%e9%a1%b9)
+- [Echarts api: Options](https://pyecharts.org/#/zh-cn/series_options?id=linestyleopts%ef%bc%9a%e7%ba%bf%e6%a0%b7%e5%bc%8f%e9%85%8d%e7%bd%ae%e9%a1%b9)
+- [Echarts api: Graph](https://pyecharts.org/#/zh-cn/basic_charts?id=graph%ef%bc%9a%e5%85%b3%e7%b3%bb%e5%9b%be)
 - [Echarts gallery](https://gallery.pyecharts.org/#/Graph/graph_les_miserables)
-- [pipreqs github](https://github.com/bndr/pipreqs)
+- [Pipreqs github](https://github.com/bndr/pipreqs)
+- [Pandas](https://www.pypandas.cn/)
