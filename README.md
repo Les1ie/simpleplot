@@ -19,7 +19,7 @@ pip install -r requirements.txt
 - [x] size: int, the symbol size of node, default is `20`.
 
 ### Edge's Attribute
-- [x] color: string, user color's name or `rgb(r,g,b)` to set it.
+- [x] color: string, user color's name or `"rgb(r,g,b)"` (**notice it need the double quotes**) to set it.
 - [x] direction: default is directed, use the command line parameter `-u` or `--undirected` to set graph undirected.
 - [x] linked vertices(source and target): string, there are necessary.
 - [ ] self-loop: use command line parameter `-s` or `--self-loop` to set whether self-loop is allowed, but the self-loop edge is difficult to see even it's `Ture` (but you can see the arrow if you shrinking the graph). 
